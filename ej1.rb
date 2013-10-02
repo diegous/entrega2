@@ -1,21 +1,25 @@
 module Caminacion
-   def caminar
-   end
+  def caminar
+    puts "Estoy caminando"
+  end
 end
 
 module Nadacion
-   def nadar
-   end
+  def nadar
+    puts "Estoy nandando"
+  end
 end
 
 module Volacion
-   def volar
-   end
+  def volar
+    puts "Estoy volando"
+  end
 end
 
 module Desplazacion
-   def desplazar
-   end
+  def desplazar
+    puts "Estoy desplazandome"
+  end
 end
 
 
@@ -29,32 +33,34 @@ class Mamifero < Animal
 end
 
 class Hombre < Mamifero
-   include Caminacion
-   include Nadacion
+  include Caminacion
+  include Nadacion
 
-   def hablar
-   end
+  def hablar
+    puts "Hablo."
+  end
 end
 
 class Perro < Mamifero
-   include Caminacion
+  include Caminacion
 
-   def ladrar
-   end
+  def ladrar
+    puts "Ladro."
+  end
 end
 
 class Ballena < Mamifero 
-   include Nadacion
+  include Nadacion
 end
 
 
 
 class Ave < Animal
-   indlude Caminacion
+  include Caminacion
 end
 
 class Aguila < Ave
-   include Volacion
+  include Volacion
 end
 
 class Pinguyno < Ave
@@ -67,39 +73,42 @@ class Reptil < Animal
 end
 
 class Cocodrilo < Reptil
-   include Caminacion
-   include Nadacion
+  include Caminacion
+  include Nadacion
 end
 
 class Boa < Reptil
-   include Desplazacion
+  include Desplazacion
 
-   def consstriccion
-   end
+  def consstriccion
+    puts "Constricciono."
+  end
 end
 
 class Cobra < Reptil
-   include Desplazacion
+  include Desplazacion
 
-   def morder
-   end
+  def morder
+    puts "Muerdo."
+  end
 end
 
 
 
 class Anfibio < Animal
-   include Nadacion
+  include Nadacion
 end
 
 class Sapo < Anfibio
-   def saltar
-   end
+  def saltar
+    puts "Salto."
+  end
 end
 
 
 
 class Pez < Animal
-   include Nadacion
+  include Nadacion
 end
 
 class Tiburon < Pez
